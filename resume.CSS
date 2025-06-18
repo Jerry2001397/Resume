@@ -1,7 +1,7 @@
     *{
         margin: 0;
         padding: 0;
-    
+        background-image: url(../Resume/Resume\ back.png)
     }
     .Blue-text{
         color: blue;
