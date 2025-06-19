@@ -1,8 +1,16 @@
     *{
         margin: 0;
         padding: 0;
-        background-image: url(../Resume/Resume\ back.png)
+        background-image: url(../Resume/Resume\ back.png) 
     }
     .Blue-text{
         color: blue;
+    }
+    h1{
+        color: blue;
+        font-size: 20px
+    }
+    *{
+        margin-left: 4px;
+        margin-top: 8px;
     }
