@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    background-image: url(../Resume/Resume\ back.png);
+    background-image: url(../Img\ 2.png)
 }
 ul{
     color: blue;
@@ -14,4 +14,8 @@ h1{
     font-family: 'Times New Roman', Times, serif;
     margin-top: 10px;
     margin-left: 5px;
+}
+.Blue-text{
+    font: center;
+    color: brown;
 }

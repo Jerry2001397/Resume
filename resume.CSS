@@ -1,7 +1,7 @@
     *{
         margin: 0;
-        padding: 0;
-        background-image: url(../Resume/Resume\ back.png) 
+        padding: 10px 12px;
+        background-image: url(../Resume/Resume\ back.png)
     }
     .Blue-text{
         color: blue;
@@ -13,4 +13,7 @@
     *{
         margin-left: 4px;
         margin-top: 8px;
+    }
+    .ur.Blue-text{
+        color: blue;
     }
