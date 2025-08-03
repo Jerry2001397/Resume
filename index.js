@@ -40,3 +40,5 @@ setTimeout(() => {
   modal.style.display = "none";
 }, 3000); // closes modal after 3 seconds
 
+
+
