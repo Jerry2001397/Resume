@@ -1,4 +1,4 @@
-// Prompt user for their email before proceeding
+// Prompt user for their full name and email before proceeding
 window.addEventListener('DOMContentLoaded', function() {
     setTimeout(function() {
         // Create overlay
@@ -27,22 +27,24 @@ window.addEventListener('DOMContentLoaded', function() {
 
         // Modal content
         modal.innerHTML = `
-            <h2 style="margin-bottom:16px;">Welcome!</h2>
-            <p style="margin-bottom:18px;font-size:1.1em;">Please enter your email to proceed:</p>
-            <input type="email" id="userEmailInput" placeholder="your@email.com" style="width:90%;padding:10px 8px;margin-bottom:18px;border-radius:6px;border:1px solid #ccc;font-size:1em;" required>
+            <h2 style=\"margin-bottom:16px;\">Welcome to Jerry's platform!</h2>
+            <p style=\"margin-bottom:18px;font-size:1.1em;\">I want to know who is accesing these information; Please enter your full name and email to proceed:</p>
+            <input type=\"text\" id=\"userFullNameInput\" placeholder=\"Full Name\" style=\"width:90%;padding:10px 8px;margin-bottom:12px;border-radius:6px;border:1px solid #ccc;font-size:1em;\" required>
+            <input type=\"email\" id=\"userEmailInput\" placeholder=\"your@email.com\" style=\"width:90%;padding:10px 8px;margin-bottom:18px;border-radius:6px;border:1px solid #ccc;font-size:1em;\" required>
             <br>
-            <button id="submitEmailModal" style="background:#2a4d8f;color:#fff;border:none;padding:10px 24px;border-radius:8px;font-size:1em;cursor:pointer;box-shadow:0 2px 8px rgba(42,77,143,0.08);">Proceed</button>
-            <p id="emailError" style="color:#c00;margin-top:10px;display:none;font-size:0.95em;">Please enter a valid email address.</p>
+            <button id=\"submitUserModal\" style=\"background:#2a4d8f;color:#fff;border:none;padding:10px 24px;border-radius:8px;font-size:1em;cursor:pointer;box-shadow:0 2px 8px rgba(42,77,143,0.08);\">Proceed</button>
+            <p id=\"userError\" style=\"color:#c00;margin-top:10px;display:none;font-size:0.95em;\">Please enter a valid name and email address.</p>
         `;
 
         overlay.appendChild(modal);
         document.body.appendChild(overlay);
 
-        document.getElementById('submitEmailModal').onclick = function() {
+        document.getElementById('submitUserModal').onclick = function() {
+            var nameInput = document.getElementById('userFullNameInput').value.trim();
             var emailInput = document.getElementById('userEmailInput').value.trim();
-            var errorMsg = document.getElementById('emailError');
+            var errorMsg = document.getElementById('userError');
             var emailPattern = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
-            if (emailPattern.test(emailInput)) {
+            if (nameInput.length > 2 && emailPattern.test(emailInput)) {
                 overlay.remove();
             } else {
                 errorMsg.style.display = 'block';
