@@ -1,19 +1,114 @@
-    *{
-        margin: 0;
-        padding: 10px 12px;
-        background-image: url(../Resume/Resume\ back.png)
+/* Center the name and image together at the top */
+.header-section {
+    text-align: left;
+    margin-top: 40px;
+    margin-bottom: 24px;
+}
+
+.header-section h1 {
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.header-section img {
+    margin: 0 0 24px 0;
+    display: block;
+}
+body {
+    background: #f7f7fa;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h3 {
+    color: #2a4d8f;
+    text-align: left;
+    margin-top: 32px;
+    margin-bottom: 12px;
+    font-size: 2em;
+    letter-spacing: 1px;
+}
+
+h1.Blue-text, .Blue-text {
+    color: #2a4d8f;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #e0e0e0;
+    margin: 32px 0 24px 0;
+}
+
+ul, dl {
+    margin-left: 32px;
+    margin-bottom: 24px;
+    font-size: 1.08em;
+}
+
+ul li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+dl dt {
+    font-weight: bold;
+    margin-top: 16px;
+    color: #2a4d8f;
+}
+
+dl dd {
+    margin-left: 16px;
+    margin-bottom: 4px;
+}
+
+footer {
+    text-align: center;
+    color: #888;
+    font-size: 1em;
+    margin-top: 40px;
+    padding: 16px 0;
+    background: #e9e9f3;
+    border-top: 1px solid #d0d0d0;
+}
+
+img {
+    display: block;
+    margin: 0 auto 24px auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(42,77,143,0.08);
+    max-width: 300px;
+    height: auto;
+}
+
+a {
+    color: #2a4d8f;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #1a2d4f;
+    text-decoration: underline;
+}
+
+p {
+    margin-left: 32px;
+    margin-bottom: 16px;
+    font-size: 1.1em;
+    line-height: 1.7;
+}
+
+@media (max-width: 600px) {
+    body, ul, dl, p {
+        margin-left: 8px;
+        margin-right: 8px;
     }
-    .Blue-text{
-        color: blue;
+    img {
+        max-width: 90vw;
     }
-    h1{
-        color: blue;
-        font-size: 20px
+    h1, h3 {
+        font-size: 1.3em;
     }
-    *{
-        margin-left: 4px;
-        margin-top: 8px;
-    }
-    .ur.Blue-text{
-        color: blue;
-    }
+}
